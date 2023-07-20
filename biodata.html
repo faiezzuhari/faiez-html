@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <title>My Biodata</title>
+    
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <h1>My Biodata</h1>
+
+    <a href="index.html">Home</a>
+<a href="biodata.html">My Biodata</a>
+<a href="education.html">My Education</a>
+<a href="experience.html">My Experience</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact Me</a>
+
+<p style="text-align:center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 30px"> <b> ABOUT ME </b> </p>
+<p style="text-align:center;" > My name is Mohammad Faiez bin Mohd Zuhari. <br> I am from D1CDIM2452B and I am 21 years old. <br> I was born at Hospital Raja Perempuan Zainab (II) and was raised at Tumpat, Kelantan. <br> My birtday date is on 19th September 2002. <br> I am a student in Bachelor of Information Science (Hons) Information System Management at UiTM Machang, Kelantan. <br> I want to be a good and educated academician. <br> In another side, I wish I could go travel around the world while enjoying the beauty of nature. </p> 
+<br>
+<br>
+<br>
+<p style="text-align:center; font-family: 'Courier New', Courier, monospace; font-size: 25px"> <b> Family Background </b> </p> 
+<p style="text-align:center;" > Father's Name: Mohd Zuhari bin Jusoh <br> Mother's Name: Fauziah binti Mat Hussain <br> No. of Sibings : 7 </p>
+<br>
+
+<style>
+    body {
+      background-image: url("images/sunset\ 2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: calc(200vh - 1000px)
+    }
+  </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+    
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/photo_6154395841624914627_y.jpg" style="width: 100%;">
+      <div class="text">Myself</div>
+    </div>
+    
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+  
+
+</body>
+</html>
