@@ -1,0 +1,73 @@
+<html>
+<head>
+   <title>Faiez Zuhari's Website</title>
+
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+<font size= "12" face="elephant" color="black"><marquee>Welcome to Faiez's Website</marquee></font>
+<body align="center">
+<body onload="startTime()">
+    <div id="txt"></div>
+</body>
+
+<br>
+<br>
+<style>
+    body {
+      background-image: url("images/homepage.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: calc(200vh - 1000px)
+    }
+</style> 
+
+<div class="logo">
+<img src="images/logoUiTM.png">
+</div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+</body>
+
+<div class="header">
+   <a href="index.html">Home</a>
+   <a href="biodata.html">My Biodata</a>
+   <a href="education.html">My Education</a>
+   <a href="experience.html">My Experience</a>
+   <a href="gallery.html">Gallery</a>
+   <a href="contact.html">Contact Me</a>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+<p style="text-align:left; font-size: 30px; font-family:fantasy;">Hi <br> I'm Faiez.</p>
+<p style="text-align:justify;" > Every struggle you had in your life <br>shaped you into the person you are today. <br>Be thankful for the hard times because <br>they can only makes you stronger.</p> 
+
+
+
+
+</body>
+</html>

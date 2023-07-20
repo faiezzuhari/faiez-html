@@ -1,0 +1,200 @@
+h1
+    {
+        color: black(11, 70, 70)
+    }
+
+a
+    {
+        text-decoration: none;
+        font-family: Impact;
+        padding-right: 50px;
+    }
+
+a:hover
+    {
+        color:blue ;
+    }
+
+body
+    {
+        background-image: url("Images/photo_6154395841624914624_y.jpg")
+  background-size
+    }
+
+.logo 
+    {
+        width: 20%;
+        height: 50px;
+        background-color: white;
+        float: left;
+    }
+
+.header
+    {
+        width: 80%;
+        height: 20%;
+        background-color: bisque;
+        float: left;
+    }
+
+.slider
+    {
+        width: 100%;
+        height: 500px;
+        background-color: cornflowerblue;
+        float: left;
+    }
+.box1
+    {
+        width: 25%;
+        height: 250px;
+        background-color: peru;
+        float: left;
+    }
+.box2
+    {
+        width: 25%;
+        height: 250px;
+        background-color: olivedrab;
+        float: left;
+    }
+.box3
+    {
+        width: 25%;
+        height: 250px;
+        background-color: rgb(35, 72, 142);
+        float: left;
+    }
+.box4
+    {
+        width: 25%;
+        height: 250px;
+        background-color: rgb(204, 70, 70);
+        float: left;
+    }
+.section1
+    { 
+        width: 50%;
+        height: 500px;
+        background-color: gold;
+        float: left;
+    }
+.section2
+    {
+        width: 50%;
+        height: 500px;
+        background-color: limegreen;
+        float: left;
+    }
+    .section2
+    {
+        width: 50%;
+        height: 500px;
+        background-color: limegreen;
+        float: left;
+    }
+.footer
+    {
+        width: 100%;
+        height: 250px;
+        background-color: wheat;
+        float: left;
+    }
+
+table,tr,td,th
+    {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+td 
+    {
+        padding: 10px;
+    }
+
+tr
+    {
+        background-color: rgb(200, 149, 248);
+    }
+
+th
+    {
+        padding: 5px;
+        background-color: black;
+        color: beige;
+    }
+
+tr:nth-child(even)
+    {
+        background-color: cyan;
+    }
+
+tr:hover
+    {
+        background-color: blue;
+    }
+
+table 
+    {
+        width: 50%;
+        height: 100px;
+    }
+
+p
+    {
+        font-family: Verdana;
+    }
+
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+      
+      .header {
+        text-align: center;
+        padding: 32px;
+      }
+      
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      
+      /* Create four equal columns that sits next to each other */
+      .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+      
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+      
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
